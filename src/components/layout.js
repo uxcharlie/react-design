@@ -9,13 +9,6 @@ import Footer from '../components/Footer';
 
 const Layout = ({ children, data }) => (
   <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: data.site.siteMetadata.description },
-        { name: 'keywords', content: data.site.siteMetadata.keywords },
-      ]}
-    />
     <Header />
     {children()}
     <Footer data={data}>
